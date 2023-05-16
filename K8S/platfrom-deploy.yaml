@@ -1,13 +1,13 @@
 apiVersion: apps/v1
 kind: Deployment
-metada:
-  name: platfroms-deploy
+metadata:
+  name: platfroms-dep1
 spec: 
   replicas: 1
   selector:
     matchLabels: 
       app: platformservice
-    template:
+  template:
       metadata: 
         labels: 
           app: platformservice
